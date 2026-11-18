@@ -1,0 +1,9 @@
+input,output,spearman_rho,p_value,n
+cp,aep_mwh,0.40764779741647805,0.0,10000
+cp,capacity_factor,0.40764779741647805,0.0,10000
+eta,aep_mwh,0.10199391633593916,1.5356121485908846e-24,10000
+eta,capacity_factor,0.10199391633593916,1.5356121485908846e-24,10000
+scenario_mean_wind_speed_mps,aep_mwh,0.8753153506128326,0.0,10000
+scenario_mean_wind_speed_mps,capacity_factor,0.8753153506128326,0.0,10000
+scenario_mean_air_density_kg_m3,aep_mwh,-0.3612426271204262,5.780241388762162e-306,10000
+scenario_mean_air_density_kg_m3,capacity_factor,-0.3612426271204262,5.780241388762162e-306,10000

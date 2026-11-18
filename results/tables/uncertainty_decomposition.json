@@ -1,0 +1,88 @@
+{
+  "design": {
+    "n_per_experiment": 5000,
+    "main_scenarios": 10000,
+    "seed": 20261118,
+    "factorial": {
+      "A_weather_only": "bootstrap weather; Cp=0.359, eta=0.94 fixed",
+      "B_turbine_only": "observed historical year fixed; Cp/eta sampled once per replicate",
+      "C_combined": "main simulation: both weather and Cp/eta sampled (existing 10,000 scenarios)"
+    }
+  },
+  "variance_components_mwh2": {
+    "total_AEP_variance_C": 180557.82479012685,
+    "weather_only_A": 149957.47559241214,
+    "turbine_only_B_mean_over_10_years": 34042.679131419936,
+    "interaction_C_minus_A_minus_B": -3442.3299337052304,
+    "weather_fraction_of_total": 0.8305232729000622,
+    "turbine_fraction_of_total": 0.18854169943058285,
+    "interaction_fraction_of_total": -0.019064972330645077
+  },
+  "monte_carlo_error": {
+    "mc_standard_error_of_mean_AEP_mwh": 4.24920962992092,
+    "variance_of_sample_mean_mwh2": 18.055782479012684,
+    "fraction_of_total_variance": 9.999999999999999e-05,
+    "note": "This is the uncertainty of the ESTIMATED MEAN, not a source of AEP variability. It shrinks as 1/sqrt(N); it is not part of the physical variance decomposition."
+  },
+  "diagnostics": {
+    "mc_se_of_weather_variance_estimate_mwh2": 2999.4494717941693,
+    "mc_se_of_turbine_variance_mean_mwh2": 1100.1449227299277,
+    "turbine_variance_by_historical_year": {
+      "2015": {
+        "mean_aep_mwh": 7069.185769994167,
+        "variance_aep_mwh2": 32024.281031135095,
+        "sd_aep_mwh": 178.95329287592082
+      },
+      "2016": {
+        "mean_aep_mwh": 6010.382150556038,
+        "variance_aep_mwh2": 33816.71900261754,
+        "sd_aep_mwh": 183.8932271798435
+      },
+      "2017": {
+        "mean_aep_mwh": 6846.121383574134,
+        "variance_aep_mwh2": 36181.99303015832,
+        "sd_aep_mwh": 190.21564875203703
+      },
+      "2018": {
+        "mean_aep_mwh": 6246.643324653776,
+        "variance_aep_mwh2": 35133.771681599916,
+        "sd_aep_mwh": 187.44004823302814
+      },
+      "2019": {
+        "mean_aep_mwh": 6691.639173163437,
+        "variance_aep_mwh2": 37325.096990981125,
+        "sd_aep_mwh": 193.1970418794789
+      },
+      "2020": {
+        "mean_aep_mwh": 6729.036297969466,
+        "variance_aep_mwh2": 36954.661477484886,
+        "sd_aep_mwh": 192.23595261418944
+      },
+      "2021": {
+        "mean_aep_mwh": 5971.514861222175,
+        "variance_aep_mwh2": 28515.95426100272,
+        "sd_aep_mwh": 168.8666759932306
+      },
+      "2022": {
+        "mean_aep_mwh": 6511.265815645266,
+        "variance_aep_mwh2": 32495.62450828573,
+        "sd_aep_mwh": 180.26542793415973
+      },
+      "2023": {
+        "mean_aep_mwh": 6743.950736951363,
+        "variance_aep_mwh2": 29149.98015708382,
+        "sd_aep_mwh": 170.73365267891336
+      },
+      "2024": {
+        "mean_aep_mwh": 6462.167143628172,
+        "variance_aep_mwh2": 38828.70917385021,
+        "sd_aep_mwh": 197.05001693440732
+      }
+    },
+    "note": "Weather-only variance is estimated from n bootstrap scenarios; turbine-only variance is averaged over 10 fixed historical years because power is nonlinear in wind (V^3 and rated clipping), so the turbine contribution depends on the weather realization."
+  },
+  "structural_model_uncertainty": {
+    "quantified": false,
+    "reason": "No experiment in this analysis varies the physics, data source, or model structure. Comparison against an OEM power curve, hub-height temperature, or measured winds would be required. It remains a documented qualitative limitation only."
+  }
+}

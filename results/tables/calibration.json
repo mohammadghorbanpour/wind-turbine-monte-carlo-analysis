@@ -1,0 +1,13 @@
+{
+  "swept_area_m2": 6361.725123519331,
+  "nominal_cp": 0.359,
+  "nominal_eta": 0.94,
+  "betz_limit": 0.5925925925925926,
+  "cp_fraction_of_betz": 0.6058125,
+  "nominal_air_density_kg_m3": 1.225,
+  "raw_power_at_rated_speed_mw": 1.9998472102329408,
+  "rated_power_mw": 2.0,
+  "ratio_raw_over_rated_at_vrated": 0.9999236051164704,
+  "raw_power_at_cut_in_mw": 0.035503164084023604,
+  "note": "Nominal Cp=0.359 with eta=0.94 and rho=1.225 kg/m3 reproduces rated power at the rated wind speed by construction; this is a calibration identity, not an empirical validation."
+}

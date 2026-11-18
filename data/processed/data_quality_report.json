@@ -1,0 +1,110 @@
+{
+  "site": "Cuxhaven, Germany",
+  "period": {
+    "start": "2015-01-01",
+    "end": "2024-12-31",
+    "timezone": "UTC"
+  },
+  "expected_hourly_records": 87672,
+  "received_records": 87672,
+  "record_count_difference": 0,
+  "completeness_pct": 100.0,
+  "duplicate_timestamps": 0,
+  "missing_timestamps": 0,
+  "non_monotonic_timestamps": 0,
+  "duplicate_rows_full": 0,
+  "columns": {
+    "wind_speed_100m": {
+      "missing_or_non_numeric": 0,
+      "non_finite": 0,
+      "plausible_range_used": [
+        0.0,
+        60.0
+      ],
+      "below_range": 0,
+      "above_range": 0,
+      "min": 0.0,
+      "max": 27.23,
+      "mean": 7.56672848800073,
+      "std": 3.4757471752769624
+    },
+    "temperature_2m": {
+      "missing_or_non_numeric": 0,
+      "non_finite": 0,
+      "plausible_range_used": [
+        -60.0,
+        60.0
+      ],
+      "below_range": 0,
+      "above_range": 0,
+      "min": -9.1,
+      "max": 30.3,
+      "mean": 10.614198375764213,
+      "std": 6.183700198359613
+    },
+    "surface_pressure": {
+      "missing_or_non_numeric": 0,
+      "non_finite": 0,
+      "plausible_range_used": [
+        800.0,
+        1100.0
+      ],
+      "below_range": 0,
+      "above_range": 0,
+      "min": 971.3,
+      "max": 1047.4,
+      "mean": 1014.1727176293457,
+      "std": 10.450059583071742
+    },
+    "wind_direction_100m": {
+      "missing_or_non_numeric": 0,
+      "non_finite": 0,
+      "plausible_range_used": [
+        0.0,
+        360.0
+      ],
+      "below_range": 0,
+      "above_range": 0,
+      "min": 0.0,
+      "max": 360.0,
+      "mean": 204.90734784195638,
+      "std": 90.27701929443305
+    },
+    "air_density_kg_m3": {
+      "min": 1.1435832885580721,
+      "max": 1.343942155018919,
+      "mean": 1.2307513074804723,
+      "std": 0.02955854257057725,
+      "non_finite": 0
+    }
+  },
+  "per_year_records": {
+    "2015": 8760,
+    "2016": 8784,
+    "2017": 8760,
+    "2018": 8760,
+    "2019": 8760,
+    "2020": 8784,
+    "2021": 8760,
+    "2022": 8760,
+    "2023": 8760,
+    "2024": 8784
+  },
+  "per_month_records": {
+    "1": 7440,
+    "2": 6792,
+    "3": 7440,
+    "4": 7200,
+    "5": 7440,
+    "6": 7200,
+    "7": 7440,
+    "8": 7440,
+    "9": 7200,
+    "10": 7440,
+    "11": 7200,
+    "12": 7440
+  },
+  "leap_day_records": 72,
+  "complete_case_hours": 87672,
+  "excluded_incomplete_hours": 0
+}

@@ -1,0 +1,162 @@
+{
+  "dataset": "Open-Meteo Historical Weather API (ERA5 reanalysis)",
+  "provider": "Open-Meteo",
+  "source_url": "https://archive-api.open-meteo.com/v1/archive",
+  "documentation": "https://open-meteo.com/en/docs/historical-weather-api",
+  "underlying_model": "era5",
+  "cell_selection": "land",
+  "site": {
+    "name": "Cuxhaven, Germany",
+    "latitude_requested": 53.86,
+    "longitude_requested": 8.69
+  },
+  "period": {
+    "start": "2015-01-01",
+    "end": "2024-12-31"
+  },
+  "timezone": "UTC",
+  "wind_speed_unit": "ms",
+  "variables": [
+    "wind_speed_100m",
+    "temperature_2m",
+    "surface_pressure",
+    "wind_direction_100m"
+  ],
+  "retrieved_at_utc": "2026-11-18T03:44:39+00:00",
+  "retrieval_method": "python-requests, one HTTP request per calendar year",
+  "per_year_request_metadata": {
+    "2015": {
+      "latitude": 53.75,
+      "longitude": 8.75,
+      "elevation": 5.0,
+      "utc_offset_seconds": 0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "records": 8760
+    },
+    "2016": {
+      "latitude": 53.75,
+      "longitude": 8.75,
+      "elevation": 5.0,
+      "utc_offset_seconds": 0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "records": 8784
+    },
+    "2017": {
+      "latitude": 53.75,
+      "longitude": 8.75,
+      "elevation": 5.0,
+      "utc_offset_seconds": 0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "records": 8760
+    },
+    "2018": {
+      "latitude": 53.75,
+      "longitude": 8.75,
+      "elevation": 5.0,
+      "utc_offset_seconds": 0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "records": 8760
+    },
+    "2019": {
+      "latitude": 53.75,
+      "longitude": 8.75,
+      "elevation": 5.0,
+      "utc_offset_seconds": 0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "records": 8760
+    },
+    "2020": {
+      "latitude": 53.75,
+      "longitude": 8.75,
+      "elevation": 5.0,
+      "utc_offset_seconds": 0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "records": 8784
+    },
+    "2021": {
+      "latitude": 53.75,
+      "longitude": 8.75,
+      "elevation": 5.0,
+      "utc_offset_seconds": 0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "records": 8760
+    },
+    "2022": {
+      "latitude": 53.75,
+      "longitude": 8.75,
+      "elevation": 5.0,
+      "utc_offset_seconds": 0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "records": 8760
+    },
+    "2023": {
+      "latitude": 53.75,
+      "longitude": 8.75,
+      "elevation": 5.0,
+      "utc_offset_seconds": 0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "records": 8760
+    },
+    "2024": {
+      "latitude": 53.75,
+      "longitude": 8.75,
+      "elevation": 5.0,
+      "utc_offset_seconds": 0,
+      "timezone": "GMT",
+      "timezone_abbreviation": "GMT",
+      "records": 8784
+    }
+  },
+  "requests": [
+    {
+      "year": 2015,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=53.86&longitude=8.69&start_date=2015-01-01&end_date=2015-12-31&hourly=['wind_speed_100m', 'temperature_2m', 'surface_pressure', 'wind_direction_100m']&timezone=UTC&models=era5&cell_selection=land&wind_speed_unit=ms"
+    },
+    {
+      "year": 2016,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=53.86&longitude=8.69&start_date=2016-01-01&end_date=2016-12-31&hourly=['wind_speed_100m', 'temperature_2m', 'surface_pressure', 'wind_direction_100m']&timezone=UTC&models=era5&cell_selection=land&wind_speed_unit=ms"
+    },
+    {
+      "year": 2017,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=53.86&longitude=8.69&start_date=2017-01-01&end_date=2017-12-31&hourly=['wind_speed_100m', 'temperature_2m', 'surface_pressure', 'wind_direction_100m']&timezone=UTC&models=era5&cell_selection=land&wind_speed_unit=ms"
+    },
+    {
+      "year": 2018,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=53.86&longitude=8.69&start_date=2018-01-01&end_date=2018-12-31&hourly=['wind_speed_100m', 'temperature_2m', 'surface_pressure', 'wind_direction_100m']&timezone=UTC&models=era5&cell_selection=land&wind_speed_unit=ms"
+    },
+    {
+      "year": 2019,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=53.86&longitude=8.69&start_date=2019-01-01&end_date=2019-12-31&hourly=['wind_speed_100m', 'temperature_2m', 'surface_pressure', 'wind_direction_100m']&timezone=UTC&models=era5&cell_selection=land&wind_speed_unit=ms"
+    },
+    {
+      "year": 2020,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=53.86&longitude=8.69&start_date=2020-01-01&end_date=2020-12-31&hourly=['wind_speed_100m', 'temperature_2m', 'surface_pressure', 'wind_direction_100m']&timezone=UTC&models=era5&cell_selection=land&wind_speed_unit=ms"
+    },
+    {
+      "year": 2021,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=53.86&longitude=8.69&start_date=2021-01-01&end_date=2021-12-31&hourly=['wind_speed_100m', 'temperature_2m', 'surface_pressure', 'wind_direction_100m']&timezone=UTC&models=era5&cell_selection=land&wind_speed_unit=ms"
+    },
+    {
+      "year": 2022,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=53.86&longitude=8.69&start_date=2022-01-01&end_date=2022-12-31&hourly=['wind_speed_100m', 'temperature_2m', 'surface_pressure', 'wind_direction_100m']&timezone=UTC&models=era5&cell_selection=land&wind_speed_unit=ms"
+    },
+    {
+      "year": 2023,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=53.86&longitude=8.69&start_date=2023-01-01&end_date=2023-12-31&hourly=['wind_speed_100m', 'temperature_2m', 'surface_pressure', 'wind_direction_100m']&timezone=UTC&models=era5&cell_selection=land&wind_speed_unit=ms"
+    },
+    {
+      "year": 2024,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=53.86&longitude=8.69&start_date=2024-01-01&end_date=2024-12-31&hourly=['wind_speed_100m', 'temperature_2m', 'surface_pressure', 'wind_direction_100m']&timezone=UTC&models=era5&cell_selection=land&wind_speed_unit=ms"
+    }
+  ],
+  "notes": "ERA5 is gridded reanalysis, not on-site turbine measurement. The returned grid cell is the ERA5 cell containing the requested point, so the series is a regional estimate."
+}

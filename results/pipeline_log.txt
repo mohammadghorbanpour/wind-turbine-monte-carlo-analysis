@@ -1,0 +1,29 @@
+==============================================================================
+Wind turbine Monte Carlo uncertainty pipeline
+==============================================================================
+[1/8] raw data present: openmeteo_era5_cuxhaven_2015_2024.csv
+      processed rows: 87,672; completeness 100.0000%
+[2/8] fitting Weibull and checking calibration ...
+      Weibull k=2.298, c=8.535 m/s; calibration ratio=0.9999
+[3/8] running Monte Carlo simulation (10,000 scenarios) ...
+      done in 6.1 s
+[4/8] sensitivity analysis (Spearman + Sobol) ...
+      Sobol: 12,288 independent-input model evaluations
+[5/8] generating figures ...
+      01_wind_timeseries: fig01_wind_timeseries.png
+      02_wind_histogram: fig02_wind_histogram.png
+      03_monthly_mean_wind: fig03_monthly_mean_wind.png
+      04_seasonal_distributions: fig04_seasonal_distributions.png
+      05_empirical_vs_weibull: fig05_empirical_vs_weibull.png
+      06_power_curve: fig06_power_curve.png
+      07_mc_power_distribution: fig07_mc_power_distribution.png
+      08_aep_distribution: fig08_aep_distribution.png
+      09_cf_distribution: fig09_cf_distribution.png
+      10_sensitivity: fig10_sensitivity.png
+      11_convergence: fig11_convergence.png
+      12_ci_visualization: fig12_confidence_intervals.png
+      thumbnail: thumbnail.png
+[6/8] running automated tests ...
+      47 tests passed
+[7/8] writing result tables ...
+[8/8] building report ...

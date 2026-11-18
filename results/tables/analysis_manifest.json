@@ -1,0 +1,172 @@
+{
+  "project": "Quantifying Wind Turbine Performance Uncertainty Using Monte Carlo Simulation",
+  "generated_at_utc": "2026-11-18T08:33:22+00:00",
+  "seed": 20261118,
+  "n_scenarios": 10000,
+  "n_hours_per_scenario": 8760,
+  "block_hours": 168,
+  "sobol_n_base": 1024,
+  "software": {
+    "python": "3.13.11",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "numpy": "2.5.0",
+    "pandas": "3.0.4",
+    "scipy": "1.18.0",
+    "matplotlib": "3.11.0",
+    "pytest": "9.2.0"
+  },
+  "commands": {
+    "download": "python -m src.data_loader --force",
+    "process": "python -m src.data_processing",
+    "pipeline": "python -m src.run_pipeline",
+    "tests": "python -m pytest -q tests"
+  },
+  "data_provenance": {
+    "raw_csv": "openmeteo_era5_cuxhaven_2015_2024.csv",
+    "processed_csv": "cuxhaven_era5_hourly_2015_2024_processed.csv",
+    "provenance_record": "openmeteo_era5_cuxhaven_2015_2024.provenance.json",
+    "api_response_metadata": {
+      "2015": {
+        "latitude": 53.75,
+        "longitude": 8.75,
+        "elevation": 5.0,
+        "utc_offset_seconds": 0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "records": 8760
+      },
+      "2016": {
+        "latitude": 53.75,
+        "longitude": 8.75,
+        "elevation": 5.0,
+        "utc_offset_seconds": 0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "records": 8784
+      },
+      "2017": {
+        "latitude": 53.75,
+        "longitude": 8.75,
+        "elevation": 5.0,
+        "utc_offset_seconds": 0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "records": 8760
+      },
+      "2018": {
+        "latitude": 53.75,
+        "longitude": 8.75,
+        "elevation": 5.0,
+        "utc_offset_seconds": 0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "records": 8760
+      },
+      "2019": {
+        "latitude": 53.75,
+        "longitude": 8.75,
+        "elevation": 5.0,
+        "utc_offset_seconds": 0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "records": 8760
+      },
+      "2020": {
+        "latitude": 53.75,
+        "longitude": 8.75,
+        "elevation": 5.0,
+        "utc_offset_seconds": 0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "records": 8784
+      },
+      "2021": {
+        "latitude": 53.75,
+        "longitude": 8.75,
+        "elevation": 5.0,
+        "utc_offset_seconds": 0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "records": 8760
+      },
+      "2022": {
+        "latitude": 53.75,
+        "longitude": 8.75,
+        "elevation": 5.0,
+        "utc_offset_seconds": 0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "records": 8760
+      },
+      "2023": {
+        "latitude": 53.75,
+        "longitude": 8.75,
+        "elevation": 5.0,
+        "utc_offset_seconds": 0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "records": 8760
+      },
+      "2024": {
+        "latitude": 53.75,
+        "longitude": 8.75,
+        "elevation": 5.0,
+        "utc_offset_seconds": 0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "records": 8784
+      }
+    },
+    "retrieved_at_utc": "2026-11-18T03:44:39+00:00"
+  },
+  "turbine_specification": {
+    "rated_power_mw": 2.0,
+    "rotor_radius_m": 45.0,
+    "hub_height_m": 100.0,
+    "cut_in_speed_mps": 3.0,
+    "rated_speed_mps": 11.5,
+    "cut_out_speed_mps": 25.0,
+    "swept_area_m2": 6361.725123519331
+  },
+  "outputs": {
+    "figures": [
+      "fig01_wind_timeseries.png",
+      "fig02_wind_histogram.png",
+      "fig03_monthly_mean_wind.png",
+      "fig04_seasonal_distributions.png",
+      "fig05_empirical_vs_weibull.png",
+      "fig06_power_curve.png",
+      "fig07_mc_power_distribution.png",
+      "fig08_aep_distribution.png",
+      "fig09_cf_distribution.png",
+      "fig10_sensitivity.png",
+      "fig11_convergence.png",
+      "fig12_confidence_intervals.png",
+      "thumbnail.png"
+    ],
+    "tables": [
+      "analysis_manifest.json",
+      "baseline_summary.json",
+      "bootstrap_preservation.json",
+      "bootstrap_preservation.md",
+      "calibration.json",
+      "convergence.csv",
+      "data_quality_summary.json",
+      "deterministic_baseline.csv",
+      "oat_tornado.csv",
+      "results_summary.md",
+      "scenarios.csv",
+      "sensitivity_summary.md",
+      "sobol.csv",
+      "sobol.json",
+      "spearman.csv",
+      "summary.json",
+      "uncertainty_decomposition.json",
+      "uncertainty_decomposition.md",
+      "weibull_fit.json"
+    ],
+    "report_pdf": "final_report.pdf",
+    "report_markdown": "final_report.md"
+  },
+  "runtime_seconds": 17.7
+}
